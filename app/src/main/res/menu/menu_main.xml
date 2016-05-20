@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <!-- ACTION BAR: CREATE -->
+    <item
+        android:id="@+id/create_order"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom"
+        android:title="@string/create_order"
+        android:icon="@drawable/ic_add_shopping_cart_black_48dp"/>
+
+    <!-- ACTION BAR: SETTINGS -->
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom"
+        android:title="@string/actions_settings"
+        android:icon="@drawable/ic_more_vert_black_48dp"/>
+
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="3"
+        android:showAsAction="always"
+        android:title="@string/action_share"
+        android:actionProviderClass="android.widget.ShareActionProvider"/>
+
+</menu>
