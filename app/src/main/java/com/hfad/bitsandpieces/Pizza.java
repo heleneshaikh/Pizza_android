@@ -1,8 +1,7 @@
 package com.hfad.bitsandpieces;
 
-/**
- * Created by heleneshaikh on 20/05/16.
- */
+
+
 public class Pizza {
     private String name;
     private int imageId;
