@@ -9,34 +9,35 @@ import android.widget.TextView;
 
 
 class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImagesAdapter.ViewHolder> {
+    //3. RETRIEVE DATA
     private String[] captions;
-    private int [] imageIds;
+    private int[] imageIds;
 
-    public CaptionedImagesAdapter(String[] captions, int [] imageIds) {
+    public CaptionedImagesAdapter(String[] captions, int[] imageIds) {
         this.captions = captions;
         this.imageIds = imageIds;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{  //here VH needs to store card views
+    //1. DEFINE THE VIEW. Here VH needs to store card views
+    public class ViewHolder extends RecyclerView.ViewHolder {
         private CardView cardView;
-
         public ViewHolder(CardView v) {
             super(v);
             cardView = v;
         }
     }
 
-    //create the views
+    //2. REPEATEDLY CALLED. How many VH it needs to maintain
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {  // parent(pizza material fragment) => the Recycler View itself
         CardView cv = (CardView) LayoutInflater.from(parent.getContext()).inflate(R.layout.card_view, parent, false);
         return new ViewHolder(cv);
     }
 
-    //set values inside the views
+    //4. DISPLAY DATA. BIND DATA + VIEW
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        CardView cardView= holder.cardView;
+        CardView cardView = holder.cardView;
         ImageView imageView = (ImageView) cardView.findViewById(R.id.info_image);
         imageView.setImageResource(imageIds[position]); //if doesn't work, use imageDrawable + resources
         imageView.setContentDescription(captions[position]);
