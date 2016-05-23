@@ -1,4 +1,6 @@
-package com.hfad.bitsandpieces;
+package com.hfad.bitsandpieces.domain;
+
+import com.hfad.bitsandpieces.R;
 
 /**
  * Created by heleneshaikh on 23/05/16.

@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
+
+    <item
+        jar="/Users/heleneshaikh/Documents/Android/BitsAndPiecesMD/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1e814b00d7dcb9ebf38680028527c4aedf24336f">
+        <dex dex="/Users/heleneshaikh/Documents/Android/BitsAndPiecesMD/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_c6e2cd3114a97ecfa10cba877875b95540cea509/classes.dex" />
+    </item>
+
+</items>

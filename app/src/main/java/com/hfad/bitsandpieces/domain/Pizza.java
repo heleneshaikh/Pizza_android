@@ -1,6 +1,7 @@
-package com.hfad.bitsandpieces;
+package com.hfad.bitsandpieces.domain;
 
 
+import com.hfad.bitsandpieces.R;
 
 public class Pizza {
     private String name;

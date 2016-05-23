@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImagesAdapter.ViewHolder> {
+public class CaptionedImagesAdapter extends RecyclerView.Adapter<CaptionedImagesAdapter.ViewHolder> {
     //3. RETRIEVE DATA
     private String[] captions;
     private int[] imageIds;

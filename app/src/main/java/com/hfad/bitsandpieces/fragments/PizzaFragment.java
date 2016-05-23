@@ -1,4 +1,4 @@
-package com.hfad.bitsandpieces;
+package com.hfad.bitsandpieces.fragments;
 
 
 import android.app.ListFragment;
@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.hfad.bitsandpieces.R;
 
 /**
  * A simple {@link Fragment} subclass.

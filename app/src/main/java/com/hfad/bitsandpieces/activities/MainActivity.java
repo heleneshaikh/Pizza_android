@@ -1,4 +1,4 @@
-package com.hfad.bitsandpieces;
+package com.hfad.bitsandpieces.activities;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -15,6 +15,12 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ShareActionProvider;
+
+import com.hfad.bitsandpieces.fragments.PastaMaterialFragment;
+import com.hfad.bitsandpieces.fragments.PizzaMaterialFragment;
+import com.hfad.bitsandpieces.R;
+import com.hfad.bitsandpieces.fragments.StoreFragment;
+import com.hfad.bitsandpieces.fragments.TopFragment;
 
 public class MainActivity extends Activity {
     private ShareActionProvider shareActionProvider;
@@ -41,7 +47,7 @@ public class MainActivity extends Activity {
                 fragment = new PizzaMaterialFragment();
                 break;
             case 2:
-                fragment = new PastaFragment();
+                fragment = new PastaMaterialFragment();
                 break;
             case 3:
                 fragment = new StoreFragment();
@@ -102,6 +108,7 @@ public class MainActivity extends Activity {
         getActionBar().setDisplayHomeAsUpEnabled(true);
         getActionBar().setHomeButtonEnabled(true);
 
+
         getFragmentManager().addOnBackStackChangedListener(
                 new FragmentManager.OnBackStackChangedListener() {
             @Override
@@ -112,7 +119,7 @@ public class MainActivity extends Activity {
                     currentPosition = 0;
                 } else if (fragment instanceof PizzaMaterialFragment) {
                     currentPosition = 1;
-                } else if (fragment instanceof PastaFragment) {
+                } else if (fragment instanceof PastaMaterialFragment) {
                     currentPosition = 2;
                 } else if (fragment instanceof StoreFragment) {
                     currentPosition = 3;

@@ -1,4 +1,4 @@
-package com.hfad.bitsandpieces;
+package com.hfad.bitsandpieces.fragments;
 
 
 import android.os.Bundle;
@@ -8,6 +8,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.hfad.bitsandpieces.CaptionedImagesAdapter;
+import com.hfad.bitsandpieces.R;
+import com.hfad.bitsandpieces.domain.Pasta;
 
 
 /**

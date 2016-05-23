@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:scrollbars="vertical"
     android:id="@+id/pizza_recycler"
-    tools:context="com.hfad.bitsandpieces.PizzaMaterialFragment">
+    tools:context=".fragments.PizzaMaterialFragment">
 
 
 </android.support.v7.widget.RecyclerView>
