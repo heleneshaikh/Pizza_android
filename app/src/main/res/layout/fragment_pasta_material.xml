@@ -4,7 +4,5 @@
     android:layout_height="match_parent"
     android:id="@+id/pasta_recycler"
     android:scrollbars="vertical"
-    tools:context=".fragments.PastaMaterialFragment">
+    tools:context=".fragments.PastaMaterialFragment"/>
 
-
-</android.support.v7.widget.RecyclerView>

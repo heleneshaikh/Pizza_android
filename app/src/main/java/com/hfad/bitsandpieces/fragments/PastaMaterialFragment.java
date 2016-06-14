@@ -24,19 +24,18 @@ public class PastaMaterialFragment extends Fragment {
     public PastaMaterialFragment() {
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         RecyclerView recyclerView = (RecyclerView) inflater.inflate(R.layout.fragment_pasta_material, container, false);
 
-        String[] pastaNames = new String[Pasta.pastas.length];
+        String[] pastaNames = new String[pastas.length];
         for (int i = 0; i < pastaNames.length; i++) {
             pastaNames[i] = Pasta.pastas[i].getName();
         }
 
-        int[] pastaImages = new int[Pasta.pastas.length];
+        int[] pastaImages = new int[pastas.length];
         for (int i = 0; i < pastaImages.length; i++) {
             pastaImages[i] = Pasta.pastas[i].getImageId();
         }

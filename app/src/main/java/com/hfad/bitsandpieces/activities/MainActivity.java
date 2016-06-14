@@ -16,10 +16,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ShareActionProvider;
 
+import com.hfad.bitsandpieces.fragments.BurgerMaterialFragment;
 import com.hfad.bitsandpieces.fragments.PastaMaterialFragment;
 import com.hfad.bitsandpieces.fragments.PizzaMaterialFragment;
 import com.hfad.bitsandpieces.R;
-import com.hfad.bitsandpieces.fragments.StoreFragment;
+import com.hfad.bitsandpieces.fragments.BurgerFragment;
 import com.hfad.bitsandpieces.fragments.TopFragment;
 
 public class MainActivity extends Activity {
@@ -50,7 +51,7 @@ public class MainActivity extends Activity {
                 fragment = new PastaMaterialFragment();
                 break;
             case 3:
-                fragment = new StoreFragment();
+                fragment = new BurgerMaterialFragment();
                 break;
             default:
                 fragment = new TopFragment();
@@ -121,7 +122,7 @@ public class MainActivity extends Activity {
                     currentPosition = 1;
                 } else if (fragment instanceof PastaMaterialFragment) {
                     currentPosition = 2;
-                } else if (fragment instanceof StoreFragment) {
+                } else if (fragment instanceof BurgerFragment) {
                     currentPosition = 3;
                 }
                 setActionBarTitle(currentPosition);

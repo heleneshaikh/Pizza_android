@@ -13,7 +13,7 @@
         <item>Home</item>
         <item>Pizza</item>
         <item>Pasta</item>
-        <item>Stores</item>
+        <item>Burgers</item>
     </string-array>
     <string-array name="pizzas">
         <item>Funghi</item>
@@ -23,12 +23,12 @@
         <item>Macaroni</item>
         <item>Lasagna</item>
     </string-array>
-    <string-array name="stores">
-        <item>NYC</item>
-        <item>London</item>
-        <item>London</item>
+    <string-array name="burgers">
+        <item>Cheeseburger</item>
+        <item>Hamburger</item>
     </string-array>
 
     <string name="drawer_open">Open drawer</string>
     <string name="drawer_closed">Close drawer</string>
+    <string name="tv_welcome">WELCOME</string>
 </resources>

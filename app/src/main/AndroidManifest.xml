@@ -21,7 +21,7 @@
                 android:name="android:support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".activities.PizzaDetailActivity"></activity>
+        <activity android:name=".activities.PizzaDetailActivity" android:parentActivityName=".activities.MainActivity"></activity>
     </application>
 
 </manifest>
